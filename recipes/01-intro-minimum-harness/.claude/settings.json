@@ -1,0 +1,17 @@
+{
+  "model": "claude-sonnet-4-6",
+  "permissionMode": "default",
+  "env": {
+    "LOG_DIR": "${HOME}/.claude/logs"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": ".claude/hooks/block-destructive.sh" }
+        ]
+      }
+    ]
+  }
+}
