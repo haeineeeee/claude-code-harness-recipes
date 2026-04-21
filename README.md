@@ -7,6 +7,7 @@
 | # | 레시피 | 설명 | 블로그 글 |
 |---|---|---|---|
 | 01 | [intro-minimum-harness](recipes/01-intro-minimum-harness/) | 5분 최소 하네스 — 위험 명령 차단 + PR 리뷰 Slash | [하네스 설계 입문](https://claudeheadlines.com/claude-code-harness-design-intro-2026/) |
+| 02 | [react-nextjs-team](recipes/02-react-nextjs-team/) | 팀 하네스 — Prettier·ESLint·tsc 커밋 게이트 + PR/테스트/리팩토링 Slash | 발행 예정 |
 
 > 시리즈 진행에 따라 추가됩니다 (React 팀·보안·비용·Skills·MCP·Subagents 등).
 

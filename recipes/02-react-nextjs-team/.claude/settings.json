@@ -1,0 +1,26 @@
+{
+  "model": "claude-sonnet-4-6",
+  "permissionMode": "default",
+  "env": {
+    "NODE_ENV": "development",
+    "CLAUDE_TEAM_PROJECT": "react-nextjs"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": ".claude/hooks/pre-commit-check.sh" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": ".claude/hooks/log-build-time.sh" }
+        ]
+      }
+    ]
+  }
+}
