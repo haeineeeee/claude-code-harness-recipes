@@ -8,6 +8,7 @@
 |---|---|---|---|
 | 01 | [intro-minimum-harness](recipes/01-intro-minimum-harness/) | 5분 최소 하네스 — 위험 명령 차단 + PR 리뷰 Slash | [하네스 설계 입문](https://claudeheadlines.com/claude-code-harness-design-intro-2026/) |
 | 02 | [react-nextjs-team](recipes/02-react-nextjs-team/) | 팀 하네스 — Prettier·ESLint·tsc 커밋 게이트 + PR/테스트/리팩토링 Slash | [React·Next.js 팀 하네스](https://claudeheadlines.com/2026/04/21/claude-code-react-nextjs-team-harness-2026/) |
+| 03 | [personal-security](recipes/03-personal-security/) | 개인 보안 하네스 — .env·SSH 키·AWS credentials 접근 3중 방어 | 발행 예정 |
 
 > 시리즈 진행에 따라 추가됩니다 (React 팀·보안·비용·Skills·MCP·Subagents 등).
 
