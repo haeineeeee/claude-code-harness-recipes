@@ -1,0 +1,82 @@
+# Claude Headlines
+
+> claudeheadlines.com — Anthropic Claude Code, MCP, AI 에이전트를 한국어로 심층 학습하는 기술 블로그. 공식 문서 기반의 체계적 강의(20강 커리큘럼), 실무 하네스 레시피(다운로드 가능), Claude API·SDK 레퍼런스, MCP·Agent 실전 예제를 제공합니다. 모든 글은 mmdc PNG 다이어그램·비교 표·단계별 코드를 포함하며, 코드는 GitHub 공개 리포 `haeineeeee/claude-code-harness-recipes` 와 연동됩니다.
+
+Last updated: 2026-04-22
+
+## Claude Code 기본기 완전정복
+
+> Claude Code 도구·설정·핵심 패턴의 체계적 강의 1~20강
+
+- [1강. Claude Code란 무엇인가 — 다른 AI 도구와 결정적 차이](https://claudeheadlines.com/2026/04/19/claude-code-lesson-01-what-is-claude-code/): 📚 Claude Code 마스터 로드맵 — 30강 커리큘럼 1강부터 순서대로 따라가면 Claude Code 활용 일인자가 되도록 설계된 30강 로드맵입니다. 이 강은 1강 (Part 0 OT) 입니다. Part 0 OT(1~2강) · Part 1 기초 도구(3~9강) · Part 2 워크플로(10~14강) · Part 3 슬래시·Skill(15~18강) · Part 4 자동화·MCP(1...
+- [2강. 설치와 첫 세션 — macOS · Windows · Linux](https://claudeheadlines.com/2026/04/14/claude-code-install-setup-complete-guide-2026/): 2026년 최신 버전 기준으로 Claude Code를 macOS, Windows(WSL), Linux에 설치하고 인증·첫 프로젝트 연결까지 마치는 전 과정을 공식 문서 기반으로 정리한 심층 가이드입니다.
+- [3강. Read — 파일 읽기의 6가지 패턴 완전 정복](https://claudeheadlines.com/2026/04/19/claude-code-lesson-03-read-tool-patterns/): 📚 Claude Code 마스터 로드맵 — 30강 커리큘럼 1강부터 순서대로 따라가면 Claude Code 활용 일인자가 되도록 설계된 30강 로드맵입니다. 이 강은 3강 (Part 1 기초 도구의 출발점) 입니다. Part 0 OT(1~2강) · Part 1 기초 도구(3~9강) · Part 2 워크플로(10~14강) · Part 3 슬래시·Skill(15~18강) · Part 4 자...
+- [4강. Edit — old_string · new_string · replace_all 완전 정복](https://claudeheadlines.com/2026/04/19/claude-code-lesson-04-edit-tool-precise-changes/): Edit 도구의 3대 규칙(Read 선행·old_string 유일성·들여쓰기 보존)과 replace_all 작동 방식을 5개 다이어그램과 실전 예제로 완전 정복합니다.
+- [5강. Write — 신규 파일 생성·전체 재작성의 안전 원칙](https://claudeheadlines.com/2026/04/19/claude-code-lesson-05-write-tool-create-files/): Claude Code 마스터 로드맵 5강 — Write 도구의 두 가지 용도(신규 생성·전체 재작성), Edit vs Write 의사결정 트리, ‘Write 전 Read’ 안전 원칙, 실전 시나리오와 자주 하는 실수까지 정리합니다.
+- [6강. Bash — 쉘 실행·타임아웃·백그라운드 완전 정복](https://claudeheadlines.com/2026/04/19/claude-code-lesson-06-bash-tool-shell-execution/): Claude Code Bash 도구 완전 정복 — cwd 유지와 shell state 휘발, timeout 기본 120초·최대 600초, run_in_background 결정 트리, 병렬 Bash 호출, rm -rf·git reset –hard 같은 파괴적 명령 안전 원칙, 빌드·테스트·git 실전 워크플로까지.
+- [7강. Grep·Glob — 코드 탐색의 조합 기술](https://claudeheadlines.com/2026/04/19/claude-code-lesson-07-grep-glob-code-search/): Claude Code의 Glob·Grep 도구를 파고드는 7강. 파일명 매칭(Glob)과 ripgrep 기반 내용 검색(Grep)을 조합해 큰 리포에서도 토큰을 아끼며 정확한 코드 위치를 찾는 3단 깔때기 전략을 실습 2건과 5개 다이어그램으로 정리합니다.
+- [8강. TodoWrite — 복잡한 작업을 구조화하는 기술](https://claudeheadlines.com/2026/04/19/claude-code-lesson-08-todowrite-task-tracking/): Claude Code 마스터 로드맵 8강. TodoWrite 의 3상태 모델, content·activeForm 작성 규칙, 작업 분해 3원칙을 다크모드 추가·디버깅 두 실습으로 정리합니다.
+- [9강. 병렬 vs 순차 — 도구 호출의 결정적 차이](https://claudeheadlines.com/2026/04/19/claude-code-lesson-09-parallel-vs-sequential/): Claude Code의 tool_use 구조를 해부하고, 도구 호출을 병렬로 묶을지 순차로 쪼갤지 결정하는 기준을 세웁니다. 병렬의 두 이점(시간·캐시), 3대 실전 패턴, 자주 하는 4가지 안티패턴까지.
+- [10강. 멀티파일 편집 — 리팩토링을 안전하게 끝내는 법](https://claudeheadlines.com/2026/04/19/claude-code-lesson-10-multi-file-refactoring/): 멀티파일 리팩토링을 ‘탐색 → 일괄 수정 → 검증’ 3단계로 안전하게 끝내는 법. Glob·Grep 으로 영향 범위를 파악하고, Edit replace_all 과 병렬 Edit 로 일괄 수정, git diff·테스트·빌드 3관문으로 검증합니다.
+- [11강. Task — 서브에이전트 호출과 격리](https://claudeheadlines.com/2026/04/20/claude-code-lesson-11-task-subagent/): 📚 Claude Code 마스터 로드맵 — 30강 커리큘럼 1강부터 순서대로 따라가면 Claude Code 활용 일인자가 되도록 설계된 30강 로드맵입니다. 이 강은 11강 (Part 2 워크플로) 입니다. Part 0 OT(1~2강) · Part 1 기초 도구(3~9강) · Part 2 워크플로(10~14강) · Part 3 슬래시·Skill(15~18강) · Part 4 자동화·MC...
+- [12강. 병렬 에이전트로 조사·구현 가속](https://claudeheadlines.com/2026/04/20/claude-code-lesson-12-parallel-agents/): 이 강은 12강 (Part 2 워크플로)에 해당합니다. Part 1 기초: 1강~9강 | Part 2 워크플로: 10강~14강 | Part 3 실전: 15강~20강 전체 커리큘럼은 치트시트와 함께 활용하세요. Claude Code의 Agent 도구를 하나씩 호출하는 것은 마치 줄 서서 한 명씩 입장시키는 것과 같습니다. 독립적인 작업이 여러 개라면, 동시에 여러 문을 열어 병렬로 진입시...
+- [13강. MCP — Model Context Protocol 기초](https://claudeheadlines.com/2026/04/20/claude-code-lesson-13-mcp-basics/): Claude Code 마스터 로드맵 — 13강 (Part 2 워크플로, Lessons 10~14) 현재 강: 13강. MCP — Model Context Protocol 기초 ← 12강. 병렬 에이전트 | 14강. MCP 서버 심화 → 여러분의 컴퓨터에 새 프린터를 연결할 때 어떻게 하시나요? USB 케이블을 꽂으면 자동으로 인식됩니다. 프린터 제조사가 달라도, 운영체제가 달라도, US...
+- [14강. MCP 서버 연동 실전](https://claudeheadlines.com/2026/04/20/claude-code-lesson-14-mcp-servers/): 14강 (Part 2 워크플로) — Claude Code 마스터 로드맵 MCP(Model Context Protocol) 서버는 Claude Code의 능력을 무한히 확장하는 핵심 메커니즘입니다. 13강에서 MCP의 개념과 아키텍처를 이해했다면, 이번 14강에서는 실제로 MCP 서버를 연결하고, 활용하고, 디버깅하는 실전 기술을 익힙니다. 파일시스템 접근부터 GitHub 이슈 관리, 데...
+- [15강. Slash 명령 완전 활용 — /model /plan /fast /loop /mcp 실전 가이드](https://claudeheadlines.com/2026/04/14/claude-code-slash-commands-complete-2026/): Claude Code의 모든 Slash 명령을 카테고리별로 정리했습니다. /help, /model, /plan, /fast, /mcp, /loop 등 2026년 기준 공식 명령과 실전 활용법, 비교표, FAQ까지 한 번에 확인하세요.
+- [16강. Hooks — PreToolUse·PostToolUse·SessionStart 완벽 가이드](https://claudeheadlines.com/2026/04/14/claude-code-hooks-complete-guide-2026/): 📘 16강 — Part 3 슬래시·Skill (15~18강) ← 15강 Slash Commands · 16강 Hooks · 17강 Settings → Claude Code의 Hooks 시스템은 도구 실행 전후에 자동으로 셸 명령을 실행하는 강력한 자동화 메커니즘입니다. PreToolUse로 위험한 명령을 차단하고, PostToolUse로 린트를 자동 실행하며, SessionStart로 ...
+- [17강. settings.json 완전 해설](https://claudeheadlines.com/2026/04/14/claude-code-settings-json-complete-guide-2026/): Claude Code의 settings.json 을 스코프(user·project·local)부터 permissions·hooks·mcpServers·statusLine·sandbox·attribution 까지 공식 문서 기준으로 정리하고, 실전 커스터마이징 예제 5개와 보안 체크리스트를 제공합니다. 2026년 최신 스펙.
+- [18강. Skills 작성 기초 — SKILL.md 구조](https://claudeheadlines.com/2026/04/20/claude-code-lesson-18-skills-basics/): 18강 (Part 3 슬래시·Skill) Claude Code를 일정 수준 이상 사용하다 보면 반복되는 작업 패턴이 눈에 들어옵니다. “코드 리뷰할 때마다 같은 프롬프트를 치고 있네”, “배포 절차를 매번 설명해야 하네” — 이런 순간이 바로 Skill이 필요한 때입니다. 이번 강에서는 SKILL.md 파일을 처음부터 작성하는 방법을 배웁니다. 프론트매터 구조, 인자 전달, 도구 제한까...
+- [19강. Skills 고급 패턴 — 재귀·조건 분기](https://claudeheadlines.com/2026/04/20/claude-code-lesson-19-skills-advanced/): 19강 (Part 4 자동화·MCP) 18강에서 Skills의 기본 구조와 등록 방법을 배웠습니다. 이제 한 단계 더 나아가, Skill이 다른 Skill을 호출하고, 조건에 따라 다른 전략을 선택하며, 에러 상황에서 우아하게 복구하는 고급 패턴을 마스터할 차례입니다. 이번 강에서 배우는 패턴들은 실제 프로덕션 워크플로우에서 Claude Code를 자동화 엔진으로 활용하는 핵심 기술입니...
+- [20강. Plan 모드 + ExitPlanMode](https://claudeheadlines.com/2026/04/20/claude-code-lesson-20-plan-mode/): 20강 (Part 4 자동화·MCP) Claude Code를 사용하다 보면 “코드를 바로 수정하기 전에 먼저 전체 구조를 파악하고 싶다”는 순간이 옵니다. 대규모 리팩터링, 레거시 코드 분석, 아키텍처 리뷰처럼 먼저 충분히 이해한 뒤 변경해야 하는 작업에서 Plan 모드는 필수적인 도구입니다. 이번 강에서는 Plan 모드의 개념부터 EnterPlanMode·ExitPlanMode 도구를...
+- [Claude Code 자주 만나는 에러 10가지 — 원인 분석과 즉시 해결법 총정리 (2026)](https://claudeheadlines.com/2026/04/16/claude-code-common-errors-troubleshooting-guide-2026/): Claude Code 설치 실패, 인증 오류, 컨텍스트 초과, 권한 거부 등 실무에서 자주 발생하는 에러 10가지의 원인과 해결법을 2026년 최신 버전 기준으로 정리합니다.
+- [Claude Code 키보드 단축키·CLI 플래그·환경 변수 치트시트 2026 — 실무 속도를 2배로 높이는 레퍼런스](https://claudeheadlines.com/2026/04/15/claude-code-keyboard-shortcuts-cli-flags-env-cheatsheet-2026/): 2026년 최신 Claude Code 키보드 단축키, CLI 실행 플래그, 환경 변수를 한 장에 정리한 치트시트. 프롬프트 제출·취소·모드 전환·파일 선택 단축키부터 –model, –allowedTools, CLAUDE_CODE_MAX_TURNS 등 고급 옵션까지 실무 예제와 함께 총정리합니다.
+
+## 하네스 엔지니어링
+
+> Claude Code 하네스(Hooks·settings.json·Skills·Slash·MCP·Subagents) 커스터마이징 실전 레시피 시리즈
+
+- [Claude Code 하네스 설계 입문 — 6개 레이어 구조와 선택 기준 완전 정리 2026](https://claudeheadlines.com/2026/04/21/claude-code-harness-design-intro-2026/): Claude Code 하네스 엔지니어링 시리즈 오프닝. settings·Hooks·Skills·Slash·MCP·Subagents 6개 레이어를 한 장에 정리하고, 문제 상황별 의사결정 플로와 5분 안에 돌아가는 최소 하네스 예제까지 제공합니다.
+- [React·Next.js 팀 하네스 — 커밋 게이트부터 PR 자동화까지 실전 설계 2026](https://claudeheadlines.com/2026/04/21/claude-code-react-nextjs-team-harness-2026/): React/Next.js 팀 프로젝트용 Claude Code 하네스 — PreToolUse 훅으로 Prettier·ESLint·tsc 커밋 게이트를 걸고, App Router Skill·PR·테스트·리팩토링 Slash 명령까지 포함된 완성 레시피. ZIP 바로 다운로드 제공.
+- [개인 보안 하네스 — Claude Code로 .env·SSH 키·크레덴셜 3중 방어 설계 2026](https://claudeheadlines.com/2026/04/22/claude-code-personal-security-harness-2026/): 개인 Claude Code 세션용 보안 하네스 — settings.permissions.deny Glob + PreToolUse guard 훅 + PostToolUse 감사 로그 + Skill 안전 패턴 주입으로 .env·SSH 키·AWS credentials·.pem 접근을 3중 방어하는 완성 레시피. ZIP 바로 다운로드 + 유출 시 5단계 대응 플로.
+
+## MCP · Agent
+
+> Model Context Protocol 서버 · Claude Agent SDK · 자율 에이전트 워크플로
+
+- [Claude Agent SDK Python 시작 가이드 2026 — 첫 자율 에이전트 30분 만에 만들기](https://claudeheadlines.com/2026/04/14/claude-agent-sdk-python-first-agent-2026/): 2026년 현재, AI 에이전트는 더 이상 실험실 장난감이 아니다. Anthropic이 공개한 Claude Agent SDK는 Claude Code 내부에서 실제 검증된 루프(계획 → 도구 호출 → 관찰 → 재계획)를 그대로 라이브러리로 빼낸 것이다. 즉, 당신이 지금까지 “Claude Code는 왜 이렇게 일을 잘하지?”라고 감탄했던 그 엔진을, 파이썬 스크립트 몇 줄로 당신의 프로젝...
+- [MCP 서버 처음 만들어보기 2026 — TypeScript + Slack 연동 단계별 예제](https://claudeheadlines.com/2026/04/14/mcp-server-first-tutorial-typescript-slack-2026/): Claude Code 를 몇 주 써 본 분이라면 한 번쯤 이런 생각을 하게 됩니다. “Claude 가 내 Slack 까지 읽고 답을 달아주면 얼마나 좋을까.” 2026 년 현재 이 바람을 가장 깔끔하게 실현해 주는 방법이 바로 MCP(Model Context Protocol) 서버입니다. 이번 튜토리얼에서는 TypeScript 로 직접 MCP 서버를 작성하고, Slack Bot API ...
+
+## Claude API · SDK
+
+> Claude API Python/TypeScript SDK · Prompt Caching · Tool Use
+
+- [Claude API Python SDK 완벽 가이드 2026 — 기본 호출부터 스트리밍·Tool Use·Prompt Caching 까지](https://claudeheadlines.com/2026/04/14/claude-api-python-sdk-complete-guide-2026/): Claude API를 파이썬에서 제대로 활용하려면 단순히 messages.create()를 호출하는 수준을 넘어 스트리밍, Tool Use, Prompt Caching, Vision, 비동기 처리, 에러 복구까지 알아야 합니다. 2026년 기준 Anthropic Python SDK(anthropic 패키지)는 거의 모든 모델 기능을 1급(first-class)으로 지원하며, 최신 Opu...
+- [Claude Prompt Caching 완벽 가이드 2026 — 토큰 비용 90% 절약하는 실전 패턴](https://claudeheadlines.com/2026/04/14/prompt-caching-complete-guide-2026/): Claude Prompt Caching의 원리부터 cache_control 사용법, 실전 최적화 패턴 4가지, 비용 시뮬레이션까지. 긴 시스템 프롬프트·문서 QA·챗봇·코드 리뷰에서 토큰 비용을 크게 줄이는 2026년 최신 가이드.
+
+## 프롬프트 엔지니어링
+
+> Claude 특화 프롬프트 기법 · 실전 템플릿
+
+- [Claude 프롬프트 엔지니어링 5단계 체계 2026 — 실전 템플릿 30개 모음](https://claudeheadlines.com/2026/04/14/claude-prompt-engineering-5-steps-templates-2026/): Claude 3.7 Sonnet과 Claude 4 Opus가 본격적으로 프로덕션 환경에 투입된 2026년 현재, 프롬프트 엔지니어링은 더 이상 선택이 아니라 필수 기술이 되었습니다. 같은 모델을 쓰더라도 프롬프트의 품질에 따라 결과물의 정확도, 비용, 재현성이 극적으로 달라지기 때문입니다. 이 가이드는 Anthropic이 공식 문서(docs.anthropic.com/en/docs/bui...
+
+## AI 도구 비교
+
+> Claude Code vs Cursor vs Copilot 등 생산성 비교
+
+- [Claude Code vs Cursor vs Windsurf 2026 — 실제 개발 생산성 정면 비교 (어떤 AI 코딩 도구 쓸까?)](https://claudeheadlines.com/2026/04/14/claude-code-vs-cursor-vs-windsurf-2026/): Claude Code, Cursor, Windsurf를 10가지 축에서 정면 비교합니다. UI 통합, 모델 선택, 코드베이스 이해력, 리팩터링, 확장성, 가격, 에이전트 기능, 학습 곡선, 팀 협업, 엔터프라이즈까지 — 어떤 AI 코딩 도구를 선택해야 할지 2026년 기준으로 정리했습니다.
+
+## AI 뉴스 · 트렌드
+
+> Anthropic 공식 문서 변경 감지 · AI 업계 주간 다이제스트
+
+- [Claude Code·Anthropic 공식 문서 주간 업데이트 — 2026-04-15](https://claudeheadlines.com/2026/04/15/claude-code-docs-weekly-update-2026-04-15/): 2026년 4월 15일 Anthropic 공식 문서 변경 감지 — Claude Code Overview, Settings, Common Workflows 3개 페이지 업데이트 요약. 새로운 설정 옵션, 워크트리 개선, 서브에이전트 워크플로우 등 개발자 필수 변경사항을 정리합니다.
+- [Claude Code·Anthropic 공식 문서 주간 업데이트 — 2026-04-16](https://claudeheadlines.com/2026/04/16/claude-code-docs-weekly-update-2026-04-16/): 2026년 4월 16일 기준 Anthropic 공식 문서 변경 감지 리포트. Overview, Quickstart, Settings, MCP, Common Workflows 등 5개 페이지의 주요 변경점을 한국어로 요약합니다.
+
+## GitHub 리포
+
+- [claude-code-harness-recipes](https://github.com/haeineeeee/claude-code-harness-recipes): 블로그 하네스 엔지니어링 시리즈와 연동된 복붙 가능한 `.claude/` 설정 모음. 레시피별 ZIP 릴리스 다운로드 제공.
+
+## Optional
+
+- [전체 콘텐츠 아카이브](https://claudeheadlines.com/feed/): RSS 피드 (최신 10건)
+- [사이트맵 인덱스](https://claudeheadlines.com/wp-sitemap.xml): 전체 URL 인덱스 (post·page·category·tag·user 분리)
