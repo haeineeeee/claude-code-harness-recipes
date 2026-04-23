@@ -11,8 +11,9 @@
 | 03 | [personal-security](recipes/03-personal-security/) | 개인 보안 하네스 — .env·SSH 키·AWS credentials 접근 3중 방어 | [개인 보안 하네스](https://claudeheadlines.com/2026/04/22/claude-code-personal-security-harness-2026/) |
 | 04 | [company-policy-harness](recipes/04-company-policy-harness/) | 회사 정책 준수 하네스 — Bash 허용 리스트·비용 한도·감사 로그 중앙화 | [회사 정책 준수 하네스](https://claudeheadlines.com/claude-code-company-policy-harness-2026/) |
 | 05 | [ai-cost-optimization](recipes/05-ai-cost-optimization/) | AI 비용 최적화 하네스 — PreToolUse·PostToolUse로 토큰·USD 자동 제어 | [AI 비용 최적화 하네스](https://claudeheadlines.com/2026/04/22/claude-code-ai-cost-optimization-harness-2026/) |
+| 06 | [skills-library](recipes/06-skills-library/) | 개인 Skills 라이브러리 — SKILL.md 체계화·훅 검증·사용 통계 | [Skills 라이브러리 구축](https://claudeheadlines.com/2026/04/23/claude-code-skills-library-2026/) |
 
-> 시리즈 진행에 따라 추가됩니다 (Skills·MCP·Slash·Hooks vs Skills·Subagents 등).
+> 시리즈 진행에 따라 추가됩니다 (Slash·MCP·Hooks vs Skills·Subagents 등).
 
 ## 설치 방법
 
