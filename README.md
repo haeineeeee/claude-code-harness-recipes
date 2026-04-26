@@ -14,6 +14,7 @@
 | 06 | [skills-library](recipes/06-skills-library/) | 개인 Skills 라이브러리 — SKILL.md 체계화·훅 검증·사용 통계 | [Skills 라이브러리 구축](https://claudeheadlines.com/2026/04/23/claude-code-skills-library-2026/) |
 | 07 | [slash-command-design](recipes/07-slash-command-design/) | Slash 명령 설계 공식 — 10개 이하로 팀 전체 하네스 통일 | [Slash 명령 설계 공식](https://claudeheadlines.com/2026/04/23/claude-code-slash-command-design-2026/) |
 | 08 | [mcp-starter-servers](recipes/08-mcp-starter-servers/) | MCP 서버 하네스 — Slack·Notion·GitHub 3개 연동 최소 설계 | [MCP 서버 하네스](https://claudeheadlines.com/2026/04/25/claude-code-mcp-starter-servers-2026/) |
+| 09 | [hooks-vs-skills-vs-slash](recipes/09-hooks-vs-skills-vs-slash/) | Hooks vs Skills vs Slash — 의사결정 플로 완벽 정리 | [Hooks vs Skills vs Slash](https://claudeheadlines.com/2026/04/26/claude-code-hooks-vs-skills-vs-slash-2026/) |
 
 > 시리즈 진행에 따라 추가됩니다 (Slash·MCP·Hooks vs Skills·Subagents 등).
 
