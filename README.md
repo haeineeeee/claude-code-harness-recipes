@@ -15,8 +15,9 @@
 | 07 | [slash-command-design](recipes/07-slash-command-design/) | Slash 명령 설계 공식 — 10개 이하로 팀 전체 하네스 통일 | [Slash 명령 설계 공식](https://claudeheadlines.com/2026/04/23/claude-code-slash-command-design-2026/) |
 | 08 | [mcp-starter-servers](recipes/08-mcp-starter-servers/) | MCP 서버 하네스 — Slack·Notion·GitHub 3개 연동 최소 설계 | [MCP 서버 하네스](https://claudeheadlines.com/2026/04/25/claude-code-mcp-starter-servers-2026/) |
 | 09 | [hooks-vs-skills-vs-slash](recipes/09-hooks-vs-skills-vs-slash/) | Hooks vs Skills vs Slash — 의사결정 플로 완벽 정리 | [Hooks vs Skills vs Slash](https://claudeheadlines.com/2026/04/26/claude-code-hooks-vs-skills-vs-slash-2026/) |
+| 10 | [subagent-orchestration](recipes/10-subagent-orchestration/) | Subagent 오케스트레이션 — Explore·Plan·구현 3에이전트 파이프라인 | [Subagent 오케스트레이션](https://claudeheadlines.com/2026/04/28/claude-code-subagent-orchestration-2026/) |
 
-> 시리즈 진행에 따라 추가됩니다 (Slash·MCP·Hooks vs Skills·Subagents 등).
+> 시리즈 완결 — 전 10편의 레시피를 모두 확인하세요.
 
 ## 설치 방법
 
